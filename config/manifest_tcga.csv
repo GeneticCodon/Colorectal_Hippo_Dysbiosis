@@ -1,0 +1,6 @@
+key,path
+counts,/content/drive/MyDrive/Colorectal_Hippo_Dysbiosis/data_raw/tcga_coad/counts.tsv
+clinical,/content/drive/MyDrive/Colorectal_Hippo_Dysbiosis/data_raw/tcga_coad/clinical.csv
+maf,/content/drive/MyDrive/Colorectal_Hippo_Dysbiosis/data_raw/tcga_coad/maf.maf
+methylation_450k,/content/drive/MyDrive/Colorectal_Hippo_Dysbiosis/data_raw/tcga_coad/methylation_450k.csv
+tcma_microbiome,/content/drive/MyDrive/Colorectal_Hippo_Dysbiosis/data_raw/tcga_coad/tcma_microbiome.csv

@@ -1,0 +1,13 @@
+pandas
+numpy
+scipy
+statsmodels
+scikit-learn
+matplotlib
+gseapy
+PyDESeq2
+anndata
+scanpy
+pycombat==0.3.2
+lifelines
+mygene

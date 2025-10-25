@@ -1,0 +1,21 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data
+data_raw/
+data_processed/
+results/
+
+# Colab/Drive mounts
+content/
+drive/

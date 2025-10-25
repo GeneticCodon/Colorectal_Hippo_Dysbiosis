@@ -1,0 +1,41 @@
+{
+  "HIPPO_CORE": [
+    "STK3",
+    "STK4",
+    "SAV1",
+    "MOB1A",
+    "MOB1B",
+    "LATS1",
+    "LATS2",
+    "NF2"
+  ],
+  "YAP_TAZ_EFFECTORS": [
+    "YAP1",
+    "WWTR1",
+    "TEAD1",
+    "TEAD2",
+    "TEAD3",
+    "TEAD4"
+  ],
+  "YAP_TARGETS": [
+    "CTGF",
+    "CYR61",
+    "ANKRD1",
+    "AREG",
+    "BIRC5",
+    "FSTL1",
+    "CCN1",
+    "AMOTL2"
+  ],
+  "NEG_CONTROL_PATHWAY": [
+    "SHH",
+    "IHH",
+    "DHH",
+    "PTCH1",
+    "PTCH2",
+    "SMO",
+    "GLI1",
+    "GLI2",
+    "GLI3"
+  ]
+}
