@@ -3,7 +3,7 @@
 **Goal:** Integrate bulk RNA-seq (TCGA-COAD) with tumor microbiome (TCMA), mutations (MAF), methylation (450k), and an IBD dysbiosis cohort (GSE235236) to examine how microbial imbalance activates Hippo/YAP–TAZ signaling in human colon.
 
 🧠 **Organization:** Genetic Codon  
-👩‍🔬 **PI:** Dr. Sana Noor  
+👩‍🔬 **PI:** Sana Noor  
 📅 **Sprint:** 2 weeks  
 👥 **Team:** A (Data Integration) | B (Analysis & Reporting)
 
