@@ -1,20 +1,22 @@
 # Colorectal–Hippo–Dysbiosis (Genetic Codon)
 
-**Goal:** Integrate bulk RNA-seq (TCGA-CRC) with tumor microbiome (TCMA) and an IBD dysbiosis cohort (GSE235236) to examine how microbial imbalance activates Hippo/YAP signaling and its relationships with microbial signatures and transcriptional programs.
+**Goal:** Integrate bulk RNA-seq from colorectal cancer (TCGA-CRC) and an IBD dysbiosis cohort (GSE235236) to examine how Hippo/YAP signaling in CRC and IBD shares transcriptional programs.
 
-🧠 **Organization:** Genetic Codon  
-👩‍🔬 **PI:** Sana Noor  
-📅 **Sprint:** 2 months  
-👥 **Team:** A (Data Integration) | B (Analysis & Reporting)
+**Organization:** Genetic Codon  
+**PI:** Sana Noor  
+**Sprint:** 2 months  
+**Team:** A (Data Integration) | B (Analysis & Reporting)
 
 ## Cohorts
-- **TCGA-CRC:** counts + clinical + microbiome (via TCMA).
-- **GSE235236 (IBD):** colon mucosa (UC/CD vs controls).
+- **TCGA-CRC:** bulk RNA-seq (counts/expression) + clinical metadata.
+- **GSE235236 (IBD):** colon mucosa expression (UC/CD vs controls).
 
 ## Specific Aims
-1. Quantify Hippo/YAP activity in CRC tumor vs normal and IBD vs control; define a Dysbiosis–Hippo Response (DHR) module.  
-2. Associate YAP/DHR with Fusobacteriales/*F. nucleatum* abundance (TCMA) in TCGA-CRC.  
+1. Quantify Hippo/YAP activity in CRC tumor vs normal and IBD vs control; define a Dysbiosis–Hippo Response (DHR) module.
+2. Compare Hippo/DHR-related differential signals between IBD and CRC.
 3. Generate candidate mechanistic links between dysbiosis signatures and Hippo pathway activation for follow-up.
+
+## Repo Layout
 
 ## Repo Layout
 ```
