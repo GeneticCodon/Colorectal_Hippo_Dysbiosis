@@ -56,5 +56,4 @@ Notes:
 
 ## Acceptance Criteria (Sprint)
 - YAP (and DHR) scores ↑ in TCGA Hippo High vs Low tumours, and in IBD vs control (p < 0.05).  
-- Positive association YAP/DHR ~ Fusobacteriales/*F. nucleatum* (p < 0.05) adjusted for MSI/purity.  
 - All notebooks run end-to-end (Colab “Run all” succeeds).
