@@ -1,6 +1,6 @@
 # Colorectal–Hippo–Dysbiosis (Genetic Codon)
 
-**Goal:** Integrate bulk RNA-seq from colorectal cancer (TCGA-CRC) and an IBD dysbiosis cohort (GSE235236) to examine how Hippo/YAP signaling in CRC and IBD shares transcriptional programs, and explore dysbiosis-driven Hippo/YAP–TAZ activation as a mechanistic link between dysbiosis and CRC.
+**Goal:** Integrate bulk RNA-seq from colorectal cancer (TCGA-CRC) and an IBD dysbiosis cohort (GSE235236) to examine how Hippo/YAP signaling in CRC and IBD shares transcriptional programs, and explore mechanistic links between dysbiosis and Hippo pathway activation.
 
 **Organization:** Genetic Codon  
 **PI:** Sana Noor  
@@ -15,6 +15,40 @@
 1. Quantify Hippo/YAP activity in CRC tumor vs normal and IBD vs control; define a Dysbiosis–Hippo Response (DHR) module.
 2. Compare Hippo/DHR-related differential signals between IBD and CRC.
 3. Generate candidate mechanistic links between dysbiosis signatures and Hippo pathway activation for follow-up.
+
+## Paper Figures
+
+All publication-ready figures are organized in the **`Paper_Figures/`** directory and generated via `generate_figures.py`. The manuscript includes **7 main figures**:
+
+| Figure | Title | Key Content |
+|--------|-------|------------|
+| **Fig 1** | IBD Volcano Plot & Heatmap | Volcano plot of IBD DEG (IBD vs Control) + YAP target heatmap across IBD samples |
+| **Fig 2** | YAP Score Distribution (IBD Cohort) | Box plot of YAP target scores stratified by group (HC, UC, CD) with individual points |
+| **Fig 3** | TCGA Volcano Plot (Hippo-High vs Low) | Volcano plot of TCGA DEG stratified by Hippo pathway activity with labeled top genes |
+| **Fig 4** | Cross-Cohort logFC Scatter | Scatter plot showing logFC concordance between IBD DEG and TCGA DEG; highlights concordant genes |
+| **Fig 5** | DHR Core Signature Heatmaps | Side-by-side heatmaps of core DHR signature genes in IBD and TCGA cohorts stratified by YAP activity |
+| **Fig 6** | Enrichment Dotplots (3-Panel) | Pathway enrichment results for DHR-High tumors across KEGG 2021, GO Biological Process 2021, and MSigDB Hallmark |
+| **Fig 7** | DHR Archetype Classification & YAP-DHR Correlation | Network diagram showing three DHR archetypes (Immune Evasion, ECM/Fibrosis, Metabolic) + scatter plot correlating YAP and DHR scores in IBD |
+
+### Figure Naming Convention
+
+Figures follow the naming pattern:
+```
+Figure_[#]_[analysis]_[description].png
+```
+
+Example files in `Paper_Figures/`:
+- `Fig1_IBD_Volcano_Heatmap.png`
+- `Fig2_YAP_Score_Boxplot.png`
+- `Fig3_TCGA_Volcano_Hippo.png`
+- `Fig4_CrossCohort_logFC_Scatter.png`
+- `Fig5_DHR_Heatmaps.png`
+- `Fig6_Enrichment_Dotplots.png`
+- `Fig7_Archetype_Scatter.png`
+
+**Figure Generation:** Run `generate_figures.py` to regenerate all figures from processed data outputs. All figures are saved at 300 DPI for publication quality.
+
+---
 
 ## Notebooks (detailed)
 
@@ -210,7 +244,11 @@
    - `notebooks/02_Overlap between IBD and CRC based on Hippo pathway.ipynb` (cross-cohort overlap & validation)
    - `notebooks/03_Mechansitic Bridge b_w CRC and Dysbiosis.ipynb` (mechanistic integration)
 
-5. **Monitor outputs** in `data_processed/` and `results/`:
+5. **Generate Publication Figures:**
+   - Run `generate_figures.py` to create all 7 publication-ready figures
+   - Outputs saved to `Paper_Figures/` directory at 300 DPI
+
+6. **Monitor outputs** in `data_processed/`, `results/`, and `Paper_Figures/`:
    - Check figures for data quality
    - Verify DEG statistics and significance
    - Review pathway scores for biological plausibility
@@ -235,6 +273,10 @@
   - Significant overlap between IBD and CRC Hippo-related DEGs
   - Reproducible mechanistic hypotheses linking dysbiosis and Hippo activation
 
+✓ **Publication figures:**
+  - All 7 figures generated and saved to `Paper_Figures/`
+  - Figures meet publication quality standards (300 DPI, clear labels, legends)
+
 ## Key Analysis Outputs
 
 | Analysis | Input Files | Output Files | Key Metric |
@@ -243,6 +285,7 @@
 | TCGA QC & Hippo | TCGA counts, clinical | tcga_log2_cpm.csv, hippo_scores.csv, DEG table | Hippo-High vs Low p < 0.05 |
 | Cross-cohort Overlap | IBD DEGs, TCGA DEGs, gene sets | overlap_genes.csv, Venn diagrams, shared heatmaps | Jaccard index, Fisher p-value |
 | Dysbiosis–Hippo Bridge | Dysbiosis signatures, Hippo scores | dysbiosis_scores.csv, mechanistic_genes.csv, networks | Correlation r, bridging gene count |
+| Publication Figures | All processed data + DEG tables | 7 figures in `Paper_Figures/` | 300 DPI, publication-ready |
 
 ## Team & Contacts
 
