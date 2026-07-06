@@ -1,6 +1,6 @@
 # Colorectal–Hippo–Dysbiosis (Genetic Codon)
 
-**Goal:** Integrate bulk RNA-seq from colorectal cancer (TCGA-CRC) and an IBD dysbiosis cohort (GSE235236) to examine how Hippo/YAP signaling in CRC and IBD shares transcriptional programs, and explore mechanistic links between dysbiosis and Hippo pathway activation.
+**Goal:** Integrate bulk RNA-seq from colorectal cancer (TCGA-CRC) and an IBD dysbiosis cohort (GSE235236) to examine how Hippo/YAP signaling in CRC and IBD shares transcriptional programs, and explore dysbiosis-driven Hippo/YAP–TAZ activation as a mechanistic link between dysbiosis and CRC.
 
 **Organization:** Genetic Codon  
 **PI:** Sana Noor  
@@ -295,7 +295,7 @@ docs/                            # Documentation & pipeline notes
 
 ## Team & Contacts
 
-- **PI:** Sana Noor (sana@gencodon.org)
+- **PI:** Sana Noor (sana11100noor@gmail.com | ceo@geneticcodon.com)
 - **Data Integration (Team A):** [contact]
 - **Analysis & Reporting (Team B):** [contact]
 
