@@ -16,55 +16,6 @@
 2. Compare Hippo/DHR-related differential signals between IBD and CRC.
 3. Generate candidate mechanistic links between dysbiosis signatures and Hippo pathway activation for follow-up.
 
-## Repo Layout
-```
-data_raw/ ... raw inputs (not versioned)
-data_processed/
-  ├─ ibd/
-  │  ├─ ibd_tpm_clean.csv        # QC-cleaned TPM matrix
-  │  ├─ ibd_log2_tpm.csv         # log2-transformed expression matrix
-  │  └─ ibd_metadata_clean.csv   # aligned sample metadata
-  ├─ tcga/
-  │  ├─ tcga_counts.csv          # raw counts or expression data
-  │  ├─ tcga_metadata.csv        # clinical + sample information
-  │  └─ hippo_scores.csv         # YAP/Hippo activity scores
-  └─ [other cohort-specific data]
-
-results/
-  ├─ qc/                         # Quality control plots & reports
-  ├─ de/
-  │  ├─ ibd/
-  │  │  ├─ IBD_DEG_UC_vs_Control.csv
-  │  │  └─ IBD_DEG_CD_vs_Control.csv
-  │  └─ tcga/
-  │     └─ TCGA_DEG_[comparisons].csv
-  ├─ hippo/                      # Hippo/YAP scoring & pathway analysis
-  ├─ microbe/                    # Dysbiosis-related signatures
-  ├─ figures/
-  │  ├─ ibd/
-  │  │  ├─ volcano_UC_vs_Control.png
-  │  │  ├─ volcano_CD_vs_Control.png
-  │  │  └─ [other QC/DE plots]
-  │  ├─ tcga/
-  │  │  └─ [TCGA analysis plots]
-  │  └─ [cross-cohort comparisons & mechanistic plots]
-  └─ tables/                     # Summary statistics & top DE genes
-
-notebooks/
-  ├─ 00_env_and_utils.ipynb
-  ├─ 01A_IBD_intake_qc_deg.ipynb
-  ├─ 01B_TCGA_Analysis.ipynb
-  ├─ 02_Overlap between IBD and CRC based on Hippo pathway.ipynb
-  └─ 03_Mechansitic Bridge b_w CRC and Dysbiosis.ipynb
-
-config/ 
-  ├─ gene_sets.json              # Hippo, YAP, DHR, dysbiosis gene signatures
-  ├─ manifest_tcga.csv           # TCGA sample paths & metadata mapping
-  └─ manifest_ibd.csv            # IBD sample paths & metadata mapping
-
-docs/                            # Documentation & pipeline notes
-```
-
 ## Notebooks (detailed)
 
 ### `notebooks/00_env_and_utils.ipynb`
